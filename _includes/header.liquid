@@ -2,13 +2,11 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}" role="navigation">
     <div class="container">
-      {% if page.permalink != '/' %}
-        <a class="navbar-brand title font-weight-lighter" href="{{ site.baseurl }}/">
+      <a class="navbar-brand title font-weight-lighter {% if page.permalink == '/' %}active{% endif %}" href="{{ site.baseurl }}/">
+        <span class="font-weight-bold">
           {% if site.title == 'blank' %}
             {% if site.first_name %}
-              <span class="font-weight-bold">
-                {{- site.first_name -}}
-              </span>
+              {{- site.first_name -}}
             {% endif %}
             {% if site.middle_name %}
               {{- site.middle_name -}}
@@ -19,8 +17,9 @@
           {% else %}
             {{- site.title -}}
           {% endif %}
-        </a>
-      {% elsif site.enable_navbar_social %}
+        </span>
+      </a>
+      {% if site.enable_navbar_social %}
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
@@ -46,15 +45,17 @@
             {% if page.permalink == '/' %} {% assign about_title = page.title %} {% endif %}
           {% endfor %}
 
-          <!-- About -->
-          <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
-            <a class="nav-link" href="{{ '/' | relative_url }}">
-              {{- about_title }}
-              {% if page.permalink == '/' %}
-                <span class="sr-only">(current)</span>
-              {% endif %}
-            </a>
-          </li>
+          <!--
+            About
+            <li class="nav-item {% if page.permalink == '/' %}active{% endif %}">
+              <a class="nav-link" href="{{ '/' | relative_url }}">
+                {{- about_title }}
+                {% if page.permalink == '/' %}
+                  <span class="sr-only">(current)</span>
+                {% endif %}
+              </a>
+            </li>
+          -->
 
           <!-- Other pages -->
           {% assign sorted_pages = site.pages | sort: 'nav_order' %}
@@ -97,9 +98,32 @@
                     {% endfor %}
                   </div>
                 </li>
+              {% elsif p.external_url %}
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    href="{{ p.external_url }}"
+                    {% if p.external_url_newtab %}
+                      target="_blank"
+                    {% else %}
+                      target="_self"
+                    {% endif %}
+                  >
+                    {{- p.title }}
+                  </a>
+                </li>
               {% else %}
                 {% assign parent_link = p.permalink | remove: 'index.html' %}
-                <li class="nav-item {% if page.url contains parent_link %}active{% endif %}">
+                <li
+                  class="
+                    nav-item
+                    {% if page.url contains parent_link %}active{% endif %}
+                    {% if p.nav_item_classes %} {{ p.nav_item_classes | join: ' ' }} {% endif %}
+                  "
+                  {% if p.nav_item_style %}
+                    style="{{p.nav_item_style}}"
+                  {% endif %}
+                >
                   {%- if p.permalink contains '://' -%}
                     {%- assign url = p.permalink -%}
                   {%- elsif p.permalink contains '/blog/' -%}
@@ -119,7 +143,7 @@
           {% endfor %}
           {% if site.search_enabled %}
             <!-- Search -->
-            <li class="nav-item">
+            <li class="nav-item divider-top">
               <button id="search-toggle" title="Search" onclick="openSearchModal()">
                 <span class="nav-link">ctrl k <i class="ti ti-search"></i></span>
               </button>
