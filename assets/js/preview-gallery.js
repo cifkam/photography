@@ -36,7 +36,7 @@ function setupPreviewGallery(gallery) {
     gallery.firstElementChild.classList.add("visible");
     let href = gallery.getAttribute("href");
     if (href !== null) {
-        for (let element of Array.from(temp1.children)) {
+        for (let element of Array.from(gallery.children)) {
             element.remove();
             let a = document.createElement("a");
             a.href = href;        
