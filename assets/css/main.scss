@@ -203,6 +203,9 @@ li.nav-subitem {
     padding: 5px 12px;
     font-size: 25px;
     cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .preview-gallery-prev {
