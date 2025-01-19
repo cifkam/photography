@@ -11,8 +11,8 @@ function previewGalleryNext(x) {
     if (index === -1) {
         es[0].classList.add("visible")
     } else {
-        es[index].remove("visible");
-        es[Math.min(index+1, es.length)].add("visible");
+        es[index].classList.remove("visible");
+        es[Math.min(index+1, es.length)].classList.add("visible");
     }
   }
 
@@ -29,7 +29,7 @@ function previewGalleryPrev(x) {
     if (index === -1) {
         es[es.length-1].classList.add("visible")
     } else {
-        es[index].remove("visible");
-        es[Math.max(index-1, 0)].add("visible");
+        es[index].classList.remove("visible");
+        es[Math.max(index-1, 0)].classList.add("visible");
     }
   }
