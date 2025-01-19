@@ -190,35 +190,45 @@ li.nav-subitem {
   visibility: hidden;
 }
 
-.preview-gallery .preview-gallery-item:first-child {
-  position: relative;
-}
-
-.preview-gallery-prev,
-.preview-gallery-next{
+.preview-gallery .preview-gallery-prev,
+.preview-gallery .preview-gallery-next{
     display: block;
     background: rgba(255,255,255,0.6);
     bottom: 0;
     position: absolute;
     padding: 5px 12px;
     font-size: 25px;
+    transition: all 500ms ease;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
-    transition: all 500ms ease;
 }
 
-.preview-gallery-prev {
+.preview-gallery .preview-gallery-prev {
     left: 0;
 }
 
-.preview-gallery-next {
+.preview-gallery .preview-gallery-next {
     right: 0;
 }
 
-.preview-gallery-next:hover,
-.preview-gallery-prev:hover {
+.preview-gallery .preview-gallery-next:hover,
+.preview-gallery .preview-gallery-prev:hover {
     color: white;
     background-color: rgba(0,0,0,0.6)
+}
+
+.preview-gallery .preview-gallery-item.visible {
+  position: relative;
+}
+
+.preview-gallery-next, 
+.preview-gallery-prev {
+    visibility: hidden;
+}
+
+.preview-gallery:hover .preview-gallery-next, 
+.preview-gallery:hover .preview-gallery-prev {
+    visibility: visible;
 }

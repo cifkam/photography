@@ -11,7 +11,7 @@ images:
   spotlight: true
 ---
 
-<div class="preview-gallery">
+<div class="preview-gallery" onload="setupPreviewGallery(this);">
     <img class="preview-gallery-item visible" src="/photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp">
     <img class="preview-gallery-item" src="/photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp">
     <img class="preview-gallery-item" src="/photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp">
