@@ -180,7 +180,7 @@ li.nav-subitem {
 
 /* Preview gallery */
 .preview-gallery {
-  display: block;
+  display: inline-block;
   position: relative;
 }
 .preview-gallery .preview-gallery-item {
@@ -192,4 +192,23 @@ li.nav-subitem {
 
 .preview-gallery .preview-gallery-item:first-child {
   position: relative;
+}
+
+.preview-gallery-prev,
+.preview-gallery-next{
+    display: block;
+    background: rgba(255,255,255,0.6);
+    bottom: 0;
+    position: absolute;
+    padding: 5px 12px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.preview-gallery-prev {
+    left: 0;
+}
+
+.preview-gallery-next {
+    right: 0;
 }
