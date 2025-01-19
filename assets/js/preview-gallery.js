@@ -12,7 +12,7 @@ function previewGalleryNext(x) {
         es[0].classList.add("visible")
     } else {
         es[index].classList.remove("visible");
-        es[Math.min(index+1, es.length)].classList.add("visible");
+        es[Math.min(index+1, es.length-1)].classList.add("visible");
     }
   }
 
