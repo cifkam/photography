@@ -15,8 +15,6 @@ images:
     <img class="preview-gallery-item visible" src="/photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp">
     <img class="preview-gallery-item" src="/photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp">
     <img class="preview-gallery-item" src="/photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp">
-    <span class="preview-gallery-prev" onclick="previewGalleryPrev(this);">↩</span>
-    <span class="preview-gallery-next" onclick="previewGalleryNext(this);">↪</span>
 </div>
 
 <div class="spotlight-group spotlight-flex" style="background-color: yellow;">
