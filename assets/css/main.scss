@@ -90,7 +90,11 @@ a.navbar-brand.active.title {
   --navbar-width: 270px;
 }
 
-/* Custom CSS: nav-menu left */
+li.nav-subitem {
+  padding-left: 15px;
+}
+
+/* Custom CSS: left nav-menu */
 @media (min-width: 576px) {
   nav#navbar {
     position: fixed;
@@ -100,10 +104,6 @@ a.navbar-brand.active.title {
     border-right: 3px solid #ebebeb;
     z-index: 99999;
     background-color: var(--global-bg-color);
-  }
-
-  li.nav-subitem {
-    padding-left: 15px;
   }
 
   body > header {
@@ -123,7 +123,7 @@ a.navbar-brand.active.title {
     top: 0;
     z-index: 100;
     background: 0;
-    padding: 0 35px;
+    padding: 0px 35px 35px 35px;
     left: 0;
     right: 0;
     max-width: unset;
