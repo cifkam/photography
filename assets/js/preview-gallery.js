@@ -9,12 +9,11 @@ function previewGalleryNext(gallery) {
     
     if (index === -1) {
         es[0].classList.add("visible")
-    } else if (index < es.length-1) {
+    } else {
         es[index].classList.remove("visible");
-        es[index+1].classList.add("visible");
+        es[Math.min(index+1, es.length-1)].classList.add("visible");
     }
 }
-
 
 function previewGalleryPrev(gallery) {
     let es = gallery.querySelectorAll(".preview-gallery-item");
@@ -27,14 +26,13 @@ function previewGalleryPrev(gallery) {
     
     if (index === -1) {
         es[es.length-1].classList.add("visible")
-    } else if (index > 0) {
+    } else {
         es[index].classList.remove("visible");
-        es[index-1].classList.add("visible");
+        es[Math.max(index-1, 0)].classList.add("visible");
     }
 }
 
 function setupPreviewGallery(gallery) {
-    //append the prev and next buttons to children of `el`
     let prev = document.createElement("span");
     prev.classList.add("preview-gallery-prev");
     prev.innerHTML = "↩";
