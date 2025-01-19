@@ -184,6 +184,8 @@
   {% endif %}
 {% endif %}
 
+<script src="{{ '/assets/js/preview-gallery.js' | relative_url | bust_file_cache }}"></script>
+
 {% if page.tikzjax %}
   <link defer rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
 {% endif %}

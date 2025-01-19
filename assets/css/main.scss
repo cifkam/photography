@@ -177,3 +177,19 @@ li.nav-subitem {
     margin-bottom: 20px;
   }
 }
+
+/* Preview gallery */
+.preview-gallery {
+  display: block;
+  position: relative;
+}
+.preview-gallery .preview-galery-item {
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: hidden;
+}
+
+.preview-gallery .preview-galery-item:first-child {
+  position: relative;
+}

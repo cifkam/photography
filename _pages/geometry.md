@@ -11,7 +11,7 @@ images:
   spotlight: true
 ---
 
-<div class="spotlight-group spotlight-flex">
+<div class="spotlight-group spotlight-flex" style="max-width: 1100px;">
     <a class="spotlight" href="/photography/assets/img/geometry/geometry_1.jpg">
         <img src="/photography/assets/img/geometry/geometry_1-480.webp" />
     </a>
