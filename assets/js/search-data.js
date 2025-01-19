@@ -44,6 +44,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/suburbs";
           },
+        },{id: "nav-test",
+          title: "test",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/photography/test";
+          },
         },{id: "post-spotlight-gallery",
       
         title: "spotlight gallery",
