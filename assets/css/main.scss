@@ -53,8 +53,6 @@ a.navbar-brand.active.title {
 }
 
 .spotlight-flex a {
-  padding: 10px;
-  min-width: 33%;
   text-align: center;
 }
 
@@ -62,9 +60,8 @@ a.navbar-brand.active.title {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
   align-items: center;
-  row-gap: 20px;
+  gap: 30px;
 }
 
 :root {
