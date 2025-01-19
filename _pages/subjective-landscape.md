@@ -29,6 +29,7 @@ images:
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_1c.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp" />
     </a>
+    <span style="flex-basis: 100%"></span>
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_2a.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_2a-480.webp" />
     </a>
@@ -38,7 +39,8 @@ images:
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_2c.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_2c-480.webp" />
     </a>
-        <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_3a.jpg">
+    <span style="flex-basis: 100%"></span>
+    <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_3a.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_3a-480.webp" />
     </a>
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_3b.jpg">
