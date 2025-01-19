@@ -10,16 +10,16 @@ published: true
 ---
 
 <div class="spotlight-group spotlight-flex">
-    <a class="spotlight" href="/assets/img/geometry/geometry_1.jpg">
-        <img src="/assets/img/geometry/geometry_1-400.webp" />
+    <a class="spotlight" href="{{ '/img/geometry/geometry_1.jpg' | prepend: site.baseurl }}">
+        <img src="{{ '/assets/img/geometry/geometry_1-480.webp' | prepend: site.baseurl }}" />
     </a>
-    <a class="spotlight" href="/assets/img/geometry/geometry_2.jpg">
-        <img src="/assets/img/geometry/geometry_2-400.webp" />
+    <a class="spotlight" href="{{ '/assets/img/geometry/geometry_2.jpg' | prepend: site.baseurl }}">
+        <img src="{{ '/assets/img/geometry/geometry_2-480.webp' | prepend: site.baseurl }}" />
     </a>
-    <a class="spotlight" href="/assets/img/geometry/geometry_3.jpg">
-        <img src="/assets/img/geometry/geometry_3-400.webp" />
+    <a class="spotlight" href="{{ '/assets/img/geometry/geometry_3.jpg' | prepend: site.baseurl }}">
+        <img src="{{ '/assets/img/geometry/geometry_3-480.webp' | prepend: site.baseurl }}" />
     </a>
-    <a class="spotlight" href="/assets/img/geometry/geometry_4.jpg">
-        <img src="/assets/img/geometry/geometry_4-400.webp" />
+    <a class="spotlight" href="{{ '/assets/img/geometry/geometry_4.jpg' | prepend: site.baseurl }}">
+        <img src="{{ '/assets/img/geometry/geometry_4-480.webp' | prepend: site.baseurl }}" />
     </a>
 </div>
