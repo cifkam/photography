@@ -6,19 +6,16 @@ nav: true
 nav_order: 3
 nav_item_classes:
   - nav-subitem
-  - nav-subitem-first
 published: true
 images:
   spotlight: true
 ---
 
+<div>
+    <img src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_1-480.webp">
+    <img src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_2-480.webp">
+</div>
 <div class="spotlight-group spotlight-flex">
-    <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_etym_1.png">
-        <img src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_1-480.webp" />
-    </a>
-    <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_etym_2.png">
-        <img src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_2-480.webp" />
-    </a>
     <span class="flex-divider"></span>
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_1a.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp" />

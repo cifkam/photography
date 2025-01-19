@@ -123,7 +123,7 @@ li.nav-subitem {
     top: 0;
     z-index: 100;
     background: 0;
-    padding: 0px 35px 35px 35px;
+    padding: 0px 35px 60px 35px;
     left: 0;
     right: 0;
     max-width: unset;
@@ -132,9 +132,10 @@ li.nav-subitem {
 
   footer.fixed-bottom[role=contentinfo] {
     margin-left: var(--navbar-width);
-    background: none;
+    background: var(--global-bg-color);
     z-index: 99999;
-    padding: 2px 8px;
+    padding: 0px;
+    border-top: 3px solid #ebebeb;
   }
 
   footer.fixed-bottom[role=contentinfo] .container {
