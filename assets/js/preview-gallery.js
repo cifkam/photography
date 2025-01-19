@@ -36,7 +36,6 @@ function setupPreviewGallery(gallery) {
     gallery.firstElementChild.classList.add("visible");
     let href = gallery.getAttribute("href");
     if (href !== null) {
-        var list = [];
         for (let element of Array.from(temp1.children)) {
             element.remove();
             let a = document.createElement("a");
@@ -44,7 +43,7 @@ function setupPreviewGallery(gallery) {
             //a.classList = element.classList;
             //element.classList=[];
             a.appendChild(element);
-            list.push(a);
+            gallery.appendChild(a);
         }
      }  
 
