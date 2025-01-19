@@ -9,12 +9,13 @@ nav_item_classes:
 published: true
 images:
   spotlight: true
+preview_gallery: true
 ---
 
-<div class="preview-gallery" onload="setupPreviewGallery(this);">
-    <img class="preview-gallery-item visible" src="/photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp">
-    <img class="preview-gallery-item" src="/photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp">
-    <img class="preview-gallery-item" src="/photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp">
+<div class="preview-gallery">
+    <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp">
+    <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp">
+    <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp">
 </div>
 
 <div class="spotlight-group spotlight-flex" style="background-color: yellow;">
