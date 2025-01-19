@@ -64,6 +64,11 @@ a.navbar-brand.active.title {
   gap: 30px;
 }
 
+.spotlight-flex > a.spotlight,
+.spotlight-flex > a.spotlight > img {
+  max-width: 100%;
+}
+
 :root {
   --navbar-width: 270px;
 }
@@ -108,7 +113,7 @@ a.navbar-brand.active.title {
     top: 0;
     z-index: 100;
     background: 0;
-    padding-left: 35px;
+    padding: 0 35px;
     left: 0;
     right: 0;
     max-width: unset;
