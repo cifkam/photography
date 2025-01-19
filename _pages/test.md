@@ -12,7 +12,7 @@ images:
 preview_gallery: true
 ---
 
-<div class="preview-gallery">
+<div class="preview-gallery" href="/photography/subjective-landscape">
     <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp">
     <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp">
     <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp">
