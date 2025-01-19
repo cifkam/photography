@@ -206,6 +206,7 @@ li.nav-subitem {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    transition: all 500ms ease;
 }
 
 .preview-gallery-prev {
@@ -214,4 +215,10 @@ li.nav-subitem {
 
 .preview-gallery-next {
     right: 0;
+}
+
+.preview-gallery-next:hover,
+.preview-gallery-prev:hover {
+    color: white;
+    background-color: rgba(0,0,0,0.6)
 }
