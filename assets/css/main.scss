@@ -69,9 +69,27 @@ a.navbar-brand.active.title {
   max-width: 100%;
 }
 
+.divider-bottom {
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.divider-top {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.flex-divider {
+  flex-basis: 100%;
+  width: 100%;
+  border-bottom: 2px solid rgb(0 0 0 / 20%);
+  display: block;
+  height: 0px;
+  margin: 10px 0px;
+}
+
 :root {
   --navbar-width: 270px;
 }
+
 /* Custom CSS: nav-menu left */
 @media (min-width: 576px) {
   nav#navbar {
@@ -82,14 +100,6 @@ a.navbar-brand.active.title {
     border-right: 3px solid #ebebeb;
     z-index: 99999;
     background-color: var(--global-bg-color);
-  }
-
-  .divider-bottom {
-    border-bottom: 1px solid var(--global-divider-color);
-  }
-
-  .divider-top {
-    border-top: 1px solid var(--global-divider-color);
   }
 
   li.nav-subitem {
@@ -120,20 +130,20 @@ a.navbar-brand.active.title {
     width: calc(100% - var(--navbar-width));
   }
 
+  footer.fixed-bottom[role=contentinfo] {
+    margin-left: var(--navbar-width);
+    background: none;
+    z-index: 99999;
+    padding: 2px 8px;
+  }
+
   footer.fixed-bottom[role=contentinfo] .container {
-    color: black;
+    color: #555;
   }
 
   footer.fixed-bottom[role=contentinfo] .container a {
-  color: black;
+  color: #555;
   text-decoration: underline
-  }
-  
-  footer.fixed-bottom[role=contentinfo] {
-    width: var(--navbar-width);
-    background: none;
-    z-index: 99999;
-    padding: 8px;
   }
 
   #navbar ul.navbar-nav {

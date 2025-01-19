@@ -19,7 +19,7 @@ images:
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_etym_2.png">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_2-480.webp" />
     </a>
-    <span style="flex-basis: 100%"></span>
+    <span class="flex-divider"></span>
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_1a.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp" />
     </a>
@@ -29,7 +29,7 @@ images:
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_1c.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp" />
     </a>
-    <span style="flex-basis: 100%"></span>
+    <span class="flex-divider"></span>
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_2a.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_2a-480.webp" />
     </a>
@@ -39,7 +39,7 @@ images:
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_2c.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_2c-480.webp" />
     </a>
-    <span style="flex-basis: 100%"></span>
+    <span class="flex-divider"></span>
     <a class="spotlight" href="/photography/assets/img/subjective_landscape/subjective_landscape_3a.jpg">
         <img src="/photography/assets/img/subjective_landscape/subjective_landscape_3a-480.webp" />
     </a>
