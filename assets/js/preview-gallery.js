@@ -36,8 +36,7 @@ function setupPreviewGallery(gallery) {
     gallery.firstElementChild.classList.add("visible");
     let href = gallery.getAttribute("href");
     if (href !== null) {
-        let items = gallery.querySelectorAll(".preview-gallery-item");
-        for (let element of items) {
+        for (let element of gallery.children) {
             element.remove();
             let a = document.createElement("a");
             a.href = href;        
@@ -46,7 +45,7 @@ function setupPreviewGallery(gallery) {
             a.appendChild(element);
             gallery.appendChild(a);
         }
-     }
+     }  
 
     // Add classes to children
     for (let child of gallery.children) {
