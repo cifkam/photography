@@ -33,7 +33,6 @@ function previewGalleryPrev(gallery) {
 }
 
 function setupPreviewGallery(gallery) {
-    gallery.firstElementChild.classList.add("visible");
     let href = gallery.getAttribute("href");
     if (href !== null) {
         for (let element of Array.from(gallery.children)) {
@@ -45,8 +44,10 @@ function setupPreviewGallery(gallery) {
             a.appendChild(element);
             gallery.appendChild(a);
         }
-     }  
-
+    }  
+    
+    gallery.firstElementChild.classList.add("visible");
+    
     // Add classes to children
     for (let child of gallery.children) {
         child.classList.add("preview-gallery-item");
