@@ -33,7 +33,7 @@ function previewGalleryPrev(gallery) {
 }
 
 function setupPreviewGallery(gallery) {
-    gallery.firstChild.classList.add("visible");
+    gallery.firstElementChild.classList.add("visible");
 
     // Add classes to children
     for (let child of gallery.children) {
