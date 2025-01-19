@@ -36,14 +36,15 @@ function setupPreviewGallery(gallery) {
     gallery.firstElementChild.classList.add("visible");
     let href = gallery.getAttribute("href");
     if (href !== null) {
-        for (let element of gallery.children) {
+        var list = [];
+        for (let element of Array.from(temp1.children)) {
             element.remove();
             let a = document.createElement("a");
             a.href = href;        
             //a.classList = element.classList;
             //element.classList=[];
             a.appendChild(element);
-            gallery.appendChild(a);
+            list.push(a);
         }
      }  
 
