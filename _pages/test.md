@@ -11,12 +11,12 @@ images:
   spotlight: true
 preview_gallery: true
 preview_galleries:
-    - id: gallery-v2
-      url: /photography/subjective-landscape
-      images:
-        - /photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp
-        - /photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp
-        - /photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp
+  - id: gallery-v2
+    url: /photography/subjective-landscape
+    images:
+      - /photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp
 ---
 
 <div id="gallery-v2"></div>
