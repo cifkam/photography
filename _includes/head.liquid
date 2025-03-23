@@ -194,7 +194,7 @@
     {% for g in page.preview_galleries %}
       setupPreviewGalleryGalleryV2(
         {{ g.id }}, {{ g.url }},
-        [ {% for url in g.images %}"{{ url }}",{% endif %} ],
+        [ {% for url in g.images %}"{{ url }}",{% endfor %} ],
         480, 480);
     {% endfor %}
   </script>
