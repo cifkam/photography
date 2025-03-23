@@ -1,6 +1,6 @@
-function setupPreviewGalleryGalleryV2(id, href, images, width, height) {
-  let g = document.getElementById(id);
-  g.classList.add("preview-gallery");
+function setupPreviewGalleryGalleryV2(id, href, images) {
+  let gallery = document.getElementById(id);
+  gallery.classList.add("preview-gallery");
 
   image = document.createElement("a");
   image.href = href;
@@ -9,27 +9,29 @@ function setupPreviewGalleryGalleryV2(id, href, images, width, height) {
   image.style.backgroundImage = "url('" + images[0] + "')";
   image.style.display = "block";
   image.style.backgroundSize = "cover";
-  g.appendChild(image);
-  g.index = 0;
-  g.images = images;
+  gallery.appendChild(image);
+  gallery.index = 0;
+  gallery.images = images;
 
   // Create prev button
   let prev = document.createElement("span");
   prev.classList.add("preview-gallery-prev");
   prev.innerHTML = "↩";
   prev.onclick = function () {
+    let g = this.parentNode;
     g.index = Math.max(0, g.index - 1);
     image.style.backgroundImage = "url('" + g.images[g.index] + "')";
   };
-  g.appendChild(prev);
+  gallery.appendChild(prev);
 
   // Create next button
   let next = document.createElement("span");
   next.classList.add("preview-gallery-next");
   next.innerHTML = "↪";
   next.onclick = function () {
-    g.index = Math.min(g.images.length - 1, g.index + 1);
+    let g = this.parentNode;
+    this.parentNode.index = Math.min(g.images.length - 1, g.index + 1);
     image.style.backgroundImage = "url('" + g.images[g.index] + "')";
   };
-  g.appendChild(next);
+  gallery.appendChild(next);
 }
