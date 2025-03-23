@@ -37,9 +37,9 @@ preview_galleries:
       - /photography/assets/img/suburbs/suburbs_8-480.webp
 ---
 
-<div id="gallery-subjective-landscape"></div>
-<div id="gallery-geometry"></div>
-<div id="gallery-suburbs"></div>
+<div id="gallery-subjective-landscape" class="preview-gallery"></div>
+<div id="gallery-geometry" class="preview-gallery"></div>
+<div id="gallery-suburbs" class="preview-gallery"></div>
 
 <div class="spotlight-group spotlight-flex" style="background-color: yellow;">
     <span class="flex-divider"></span>
