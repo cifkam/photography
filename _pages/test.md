@@ -10,6 +10,17 @@ published: true
 images:
   spotlight: true
 preview_gallery: true
+preview_galleries:
+    - id: id1
+      urls:
+        - /photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp
+        - /photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp
+        - /photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp
+    - id: id2
+      urls:
+        - text1
+        - text2
+        - text3
 ---
 
 <div class="preview-gallery" href="/photography/subjective-landscape">

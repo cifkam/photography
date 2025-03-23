@@ -156,6 +156,7 @@ li.nav-subitem {
   .navbar-expand-sm .navbar-collapse {
     display: block !important;
   }
+
   progress#progress {
     position: fixed;
     top: 0!important;
@@ -231,4 +232,8 @@ li.nav-subitem {
 .preview-gallery:hover .preview-gallery-next, 
 .preview-gallery:hover .preview-gallery-prev {
     visibility: visible;
+}
+
+.preview-gallery img {
+  max-width: 100%;
 }
