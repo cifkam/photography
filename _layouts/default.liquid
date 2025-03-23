@@ -51,16 +51,6 @@
       {% endif %}
     </div>
 
-    {% if page.preview_galleries %}
-      {% for g in page.preview_galleries %}
-        <div>ID: {{ g.id }}
-          {% for url in g.urls %}
-            <p>{{ url }}</p>
-          {% endfor %}
-        </div>
-      {% endfor %}
-    {% endif %}
-
     <!-- Footer -->
     {% include footer.liquid %}
 
