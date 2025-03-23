@@ -28,7 +28,7 @@ function setupPreviewGalleryGalleryV2(id, href, images) {
   next.classList.add("preview-gallery-next");
   next.innerHTML = "↪";
   next.onclick = () => {
-    this.parentNode.index = Math.min(g.images.length - 1, g.index + 1);
+    g.index = Math.min(g.images.length - 1, g.index + 1);
     image.style.backgroundImage = "url('" + g.images[g.index] + "')";
   };
   g.appendChild(next);
