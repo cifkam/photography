@@ -23,17 +23,18 @@ function setupPreviewGalleryGalleryV2(id, href, images) {
         image.style.backgroundImage = "url('" + g.images[g.index] + "')";
     };
   })(g, image);
-
-  g.appendChild(prev);
-
+  
   // Create next button
   let next = document.createElement("span");
   next.classList.add("preview-gallery-next");
   next.innerHTML = "↪";
   next.onclick = (function(g, image) {
-    return function() {
-        g.index = Math.min(g.images.length - 1, g.index + 1);
-        image.style.backgroundImage = "url('" + g.images[g.index] + "')";
-    };
-  })(g, image);
+      return function() {
+          g.index = Math.min(g.images.length - 1, g.index + 1);
+          image.style.backgroundImage = "url('" + g.images[g.index] + "')";
+        };
+    })(g, image);
+
+  g.appendChild(prev);
+  g.appendChild(next);
 }
