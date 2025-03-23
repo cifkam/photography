@@ -81,53 +81,41 @@ window.addEventListener("load", (event) => { setupAllPreviewGalleries(); });
 
 
 function setupPreviewGalleryGalleryV2(id, href, images, width, height) {
-    let gallery = document.getElementById(id);
+    let g = document.getElementById(id);
+    g.classList.add("preview-gallery");
+    g.innerHTML = "";
+    g.style.width = width;
+    g.style.height = height;
+
     image = document.createElement("a");
     image.href = href;
-    image.style.width = width;
-    image.style.height = height;
+    image.style.width = "100%";
+    image.style.height = "100%";
     image.style.backgroundImage = "url('" + images[0] + "')";
     image.style.display = "block";
     image.style.backgroundSize = "cover";
-    gallery.appendChild(image);
-    
+    g.appendChild(image);
+    g.index = 0;
+    g.images = images;
 
     // Create prev button
     let prev = document.createElement("span");
     prev.classList.add("preview-gallery-prev");
     prev.innerHTML = "↩";
     prev.onclick = function() {
-        // find the current image in the images array
-        let index = 1;
-        for (let i = 0; i < images.length; i++) {
-            if (image.style.backgroundImage === "url('" + images[i] + "')") {
-                index = i;
-                break;
-            }
-        }
-        // set the previous image
-        index = (index - 1 + images.length) % images.length;
-        image.style.backgroundImage = "url('" + images[index] + "')";
+        g.index = Math.max(0, g.index - 1);
+        image.style.backgroundImage = "url('" + g.images[g.index] + "')";
     };
-    gallery.appendChild(prev);
+    g.appendChild(prev);
     
     // Create next button
     let next = document.createElement("span");
     next.classList.add("preview-gallery-next");
     next.innerHTML = "↪";
     next.onclick = function() {
-        // find the current image in the images array
-        let index = -1;
-        for (let i = 0; i < images.length; i++) {
-            if (image.style.backgroundImage === "url('" + images[i] + "')") {
-                index = i;
-                break;
-            }
-        }
-        // set the next image
-        index = (index + 1) % images.length;
-        image.style.backgroundImage = "url('" + images[index] + "')";
+        g.index = Math.min(g.images.length-1, g.index + 1);
+        image.style.backgroundImage = "url('" + g.images[g.index] + "')";
     };
-    gallery.appendChild(next);
+    g.appendChild(next);
 
 }
