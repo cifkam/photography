@@ -183,7 +183,10 @@ li.nav-subitem {
 .preview-gallery {
   display: inline-block;
   position: relative;
+  width: 480px;
+  height: 480px;
 }
+
 .preview-gallery .preview-gallery-item {
   position: absolute;
   left: 0;
