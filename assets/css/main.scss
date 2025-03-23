@@ -185,7 +185,7 @@ li.nav-subitem {
   position: relative;
   width: 480px;
   height: 480px;
-  margin: 0px 3.5px;
+  margin: 5px 5px;
 }
 
 .preview-gallery .preview-gallery-item {
@@ -198,7 +198,7 @@ li.nav-subitem {
 .preview-gallery .preview-gallery-prev,
 .preview-gallery .preview-gallery-next{
     display: block;
-    background: rgba(255,255,255,0.6);
+    background-color: rgba(255, 255, 255, 0.6);
     bottom: 0;
     position: absolute;
     padding: 5px 12px;
@@ -221,7 +221,7 @@ li.nav-subitem {
 .preview-gallery .preview-gallery-next:hover,
 .preview-gallery .preview-gallery-prev:hover {
     color: white;
-    background-color: rgba(0,0,0,0.6)
+    background-color: rgba(0, 0, 0, 0.6)
 }
 
 .preview-gallery .preview-gallery-item.visible {
