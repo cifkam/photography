@@ -1,9 +1,10 @@
 function previewGalleryNext(gallery) {
     let es = gallery.querySelectorAll(".preview-gallery-item");
     var index = -1;
-    for (var i=0; i<es.length; ++i) {
-      if (es[i].classList.contains("visible")) {
-          index = i; break;
+    for (var i = 0; i < es.length; ++i) {
+        if (es[i].classList.contains("visible")) {
+            index = i;
+            break;
         }
     }
     
@@ -39,13 +40,12 @@ function setupPreviewGallery(gallery) {
             element.remove();
             let a = document.createElement("a");
             a.href = href;        
-            //a.classList = element.classList;
-            //element.classList=[];
             a.appendChild(element);
             gallery.appendChild(a);
         }
-    }  
-    
+    }
+
+    gallery.removeAttribute("href");
     gallery.firstElementChild.classList.add("visible");
     
     // Add classes to children
