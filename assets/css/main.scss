@@ -189,14 +189,14 @@ li.nav-subitem {
 .preview-gallery-image {
   display: block;
   width: 480px;
-  height: 480px;
-  background-size: cover;
+  height: auto;
+  max-width: calc(100vw - 50px);
 }
 
 .preview-gallery .preview-gallery-prev,
 .preview-gallery .preview-gallery-next{
     display: block;
-    background-color: rgba(100%,100%,100%,0.6);
+    background-color: rgba(100%, 100%, 100%, 0.6);
     bottom: 33px;
     position: absolute;
     padding: 5px 12px;

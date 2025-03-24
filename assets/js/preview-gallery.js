@@ -1,18 +1,21 @@
-function setupPreviewGalleryGalleryV2(id, href, images, title, width = null, height = null) {
+function setupPreviewGalleryGallery(id, href, images, title, width = null, height = null) {
   let g = document.getElementById(id);
   g.classList.add("preview-gallery");
 
-  image = document.createElement("a");
-  image.href = href;
-  image.style.backgroundImage = "url('" + images[0] + "')";
-  image.classList.add("preview-gallery-image");
+  let image_link = document.createElement("a");
+  image_link.href = href;
+
+  let image = document.createElement("img");
+  image.src = images[0];
   if (width != null) {
     image.style.width = width;
   }
   if (height != null) {
     image.style.height = height;
   }
-  g.appendChild(image);
+  image.classList.add("preview-gallery-image");
+  image_link.appendChild(image);
+  g.appendChild(image_link);
   g.index = 0;
   g.images = images;
   g.image = image;
@@ -24,7 +27,7 @@ function setupPreviewGalleryGalleryV2(id, href, images, title, width = null, hei
   prev.onclick = (function (g) {
     return function () {
       g.index = Math.max(0, g.index - 1);
-      g.image.style.backgroundImage = "url('" + g.images[g.index] + "')";
+      g.image.src = g.images[g.index];
     };
   })(g);
   g.appendChild(prev);
@@ -36,7 +39,7 @@ function setupPreviewGalleryGalleryV2(id, href, images, title, width = null, hei
   next.onclick = (function (g) {
     return function () {
       g.index = Math.min(g.images.length - 1, g.index + 1);
-      g.image.style.backgroundImage = "url('" + g.images[g.index] + "')";
+      g.image.src = g.images[g.index];
     };
   })(g);
   g.appendChild(next);

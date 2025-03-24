@@ -184,15 +184,12 @@
   {% endif %}
 {% endif %}
 
-{% if page.preview_gallery %}
-  <script src="{{ '/assets/js/preview-gallery.js' | relative_url | bust_file_cache }}"></script>
-{% endif %}
-
 {% if page.preview_galleries %}
+  <script src="{{ '/assets/js/preview-gallery.js' | relative_url | bust_file_cache }}"></script>
   <script>
     {% for g in page.preview_galleries %}
       window.addEventListener("load", (event) => {
-        setupPreviewGalleryGalleryV2(
+        setupPreviewGalleryGallery(
           "{{ g.id }}",
           "{{ g.url }}",
           [ {% for url in g.images %}"{{ url }}",{% endfor %} ],

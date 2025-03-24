@@ -9,7 +9,6 @@ nav_item_classes:
 published: true
 images:
   spotlight: true
-preview_gallery: true
 preview_galleries:
   - id: gallery-subjective-landscape
     title: Subjective Landscape
@@ -29,7 +28,6 @@ preview_galleries:
   - id: gallery-suburbs
     title: Suburbs
     width: 300px
-    height: 300px
     url: /photography/suburbs
     images:
       - /photography/assets/img/suburbs/suburbs_1-480.webp
