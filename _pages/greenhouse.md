@@ -3,7 +3,7 @@ layout: page
 title: greenhouse
 permalink: /greenhouse
 nav: true
-nav_order: 9
+nav_order: 11
 nav_item_classes:
   - nav-subitem
 published: true

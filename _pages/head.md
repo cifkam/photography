@@ -3,7 +3,7 @@ layout: page
 title: head
 permalink: /head
 nav: true
-nav_order: 10
+nav_order: 12
 nav_item_classes:
   - nav-subitem
 published: true
@@ -24,6 +24,7 @@ images:
     <a class="spotlight" href="/photography/assets/img/head/head_04.jpg">
         <img src="/photography/assets/img/head/head_04-480.webp" />
     </a>
+    <span class="flex-divider"></span>
     <a class="spotlight" href="/photography/assets/img/head/head_05.jpg">
         <img src="/photography/assets/img/head/head_05-480.webp" />
     </a>

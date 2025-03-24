@@ -2,7 +2,7 @@
 layout: page
 title: test
 permalink: /test
-nav: true
+nav: false
 nav_order: 666
 nav_item_classes:
   - nav-subitem

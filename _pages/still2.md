@@ -3,7 +3,7 @@ layout: page
 title: still life 2
 permalink: /still2
 nav: true
-nav_order: 8
+nav_order: 10
 nav_item_classes:
   - nav-subitem
 published: true

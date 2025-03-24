@@ -12,8 +12,8 @@ images:
 ---
 
 <div>
-    <img src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_1-480.webp">
-    <img src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_2-480.webp">
+    <img class="max-width" src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_1-480.webp">
+    <img class="max-width" src="/photography/assets/img/subjective_landscape/subjective_landscape_etym_2-480.webp">
 </div>
 <div class="spotlight-group spotlight-flex">
     <span class="flex-divider"></span>

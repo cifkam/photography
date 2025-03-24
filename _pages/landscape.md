@@ -3,7 +3,7 @@ layout: page
 title: landscape
 permalink: /landscape
 nav: true
-nav_order: 6
+nav_order: 8
 nav_item_classes:
   - nav-subitem
 published: true
