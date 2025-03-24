@@ -3,7 +3,7 @@ layout: page
 title: genius loci
 permalink: /genius-loci
 nav: true
-nav_order: 5
+nav_order: 6
 nav_item_classes:
   - nav-subitem
 published: true

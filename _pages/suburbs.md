@@ -3,7 +3,7 @@ layout: page
 title: suburbs
 permalink: /suburbs
 nav: true
-nav_order: 5
+nav_order: 7
 nav_item_classes:
   - nav-subitem
 published: true
