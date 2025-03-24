@@ -19,6 +19,12 @@ preview_galleries:
       - /photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp
       - /photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp
       - /photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_2a-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_2b-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_2c-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_3a-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_3b-480.webp
+      - /photography/assets/img/subjective_landscape/subjective_landscape_3c-480.webp
 
   - id: gallery-geometry
     title: geometry
