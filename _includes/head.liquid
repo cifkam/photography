@@ -193,8 +193,10 @@
     {% for g in page.preview_galleries %}
       window.addEventListener("load", (event) => {
         setupPreviewGalleryGalleryV2(
-          "{{ g.id }}", "{{ g.url }}",
-          [ {% for url in g.images %}"{{ url }}",{% endfor %} ]);
+          "{{ g.id }}",
+          "{{ g.url }}",
+          [ {% for url in g.images %}"{{ url }}",{% endfor %} ],
+          "{{ g.title }}");
       });
     {% endfor %}
   </script>
