@@ -12,16 +12,16 @@ images:
 ---
 
 <div class="spotlight-group spotlight-flex" style="max-width: 1100px;">
-    <a class="spotlight" href="/photography/assets/img/geometry/geometry_1.jpg">
-        <img src="/photography/assets/img/geometry/geometry_1-480.webp" />
+    <a class="spotlight" href="/photography/assets/img/geometry/geometry_01.jpg">
+        <img src="/photography/assets/img/geometry/geometry_01-480.webp" />
     </a>
-    <a class="spotlight" href="/photography/assets/img/geometry/geometry_2.jpg">
-        <img src="/photography/assets/img/geometry/geometry_2-480.webp" />
+    <a class="spotlight" href="/photography/assets/img/geometry/geometry_02.jpg">
+        <img src="/photography/assets/img/geometry/geometry_02-480.webp" />
     </a>
-    <a class="spotlight" href="/photography/assets/img/geometry/geometry_3.jpg">
-        <img src="/photography/assets/img/geometry/geometry_3-480.webp" />
+    <a class="spotlight" href="/photography/assets/img/geometry/geometry_03.jpg">
+        <img src="/photography/assets/img/geometry/geometry_03-480.webp" />
     </a>
-    <a class="spotlight" href="/photography/assets/img/geometry/geometry_4.jpg">
-        <img src="/photography/assets/img/geometry/geometry_4-480.webp" />
+    <a class="spotlight" href="/photography/assets/img/geometry/geometry_04.jpg">
+        <img src="/photography/assets/img/geometry/geometry_04-480.webp" />
     </a>
 </div>
