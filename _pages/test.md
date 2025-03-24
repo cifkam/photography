@@ -12,12 +12,14 @@ images:
 preview_gallery: true
 preview_galleries:
   - id: gallery-subjective-landscape
+    title: Subjective Landscape
     url: /photography/subjective-landscape
     images:
       - /photography/assets/img/subjective_landscape/subjective_landscape_1a-480.webp
       - /photography/assets/img/subjective_landscape/subjective_landscape_1b-480.webp
       - /photography/assets/img/subjective_landscape/subjective_landscape_1c-480.webp
   - id: gallery-geometry
+    title: Geometry
     url: /photography/geometry
     images:
       - /photography/assets/img/geometry/geometry_1-480.webp
@@ -25,6 +27,7 @@ preview_galleries:
       - /photography/assets/img/geometry/geometry_3-480.webp
       - /photography/assets/img/geometry/geometry_4-480.webp
   - id: gallery-suburbs
+    title: Suburbs
     url: /photography/suburbs
     images:
       - /photography/assets/img/suburbs/suburbs_1-480.webp

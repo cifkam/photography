@@ -1,14 +1,11 @@
-function setupPreviewGalleryGalleryV2(id, href, images) {
+function setupPreviewGalleryGalleryV2(id, href, images, title) {
   let g = document.getElementById(id);
   g.classList.add("preview-gallery");
 
   image = document.createElement("a");
   image.href = href;
-  image.style.width = "100%";
-  image.style.height = "100%";
   image.style.backgroundImage = "url('" + images[0] + "')";
-  image.style.display = "block";
-  image.style.backgroundSize = "cover";
+  image.classList.add("preview-gallery-image");
   g.appendChild(image);
   g.index = 0;
   g.images = images;
@@ -20,8 +17,8 @@ function setupPreviewGalleryGalleryV2(id, href, images) {
   prev.innerHTML = "↩";
   prev.onclick = (function(g) {
     return function() {
-        g.index = Math.max(0, g.index - 1);
-        g.image.style.backgroundImage = "url('" + g.images[g.index] + "')";
+      g.index = Math.max(0, g.index - 1);
+      g.image.style.backgroundImage = "url('" + g.images[g.index] + "')";
     };
   })(g);
   g.appendChild(prev);
@@ -31,10 +28,19 @@ function setupPreviewGalleryGalleryV2(id, href, images) {
   next.classList.add("preview-gallery-next");
   next.innerHTML = "↪";
   next.onclick = (function(g) {
-      return function() {
-          g.index = Math.min(g.images.length - 1, g.index + 1);
-          g.image.style.backgroundImage = "url('" + g.images[g.index] + "')";
-        };
-    })(g);
+    return function() {
+      g.index = Math.min(g.images.length - 1, g.index + 1);
+      g.image.style.backgroundImage = "url('" + g.images[g.index] + "')";
+    };
+  })(g);
   g.appendChild(next);
+
+  // Create div with gallery title
+  let title_div = document.createElement("div");
+  title_div.classList.add("preview-gallery-title");
+  let title_link = document.createElement("a");
+  title_link.innerHTML = title;
+  title_link.href = href;
+  title_div.appendChild(title_link);
+  g.appendChild(title_div);
 }
