@@ -177,6 +177,15 @@ li.nav-subitem {
   #navbar a.navbar-brand {
     margin-bottom: 20px;
   }
+
+  div[role=main] footer.sticky-bottom {
+    border-top: 1px solid var(--global-divider-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: .9rem;
+    position: absolute;
+    width: calc(100% - 70px);
+  }
 }
 
 /* Preview gallery */
@@ -249,4 +258,8 @@ li.nav-subitem {
 
 .max-width {
   max-width: 100%;
+}
+
+div[role=main] footer.sticky-bottom {
+  width: calc(100% - 30px);
 }
