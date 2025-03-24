@@ -48,11 +48,9 @@
         {% endif %}
       {% else %}
         {{ content }}
+        <!-- Footer -->
+        {% include footer.liquid %}
       {% endif %}
-    </div>
-
-    <!-- Footer -->
-    {% include footer.liquid %}
 
     <!-- JavaScripts -->
     {% include scripts.liquid %}
