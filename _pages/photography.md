@@ -126,6 +126,7 @@ preview_galleries:
       - /photography/assets/img/head/head_08-480.webp
 
   - id: gallery-my-film-is-not-advancing
+    generate: false
     title: my film is not advancing
     url: /photography/my-film-is-not-advancing
     images:
@@ -144,15 +145,3 @@ preview_galleries:
       - /photography/assets/img/multi/multi_c4-480.webp
       - /photography/assets/img/multi/multi_c5-480.webp
 ---
-
-<div id="gallery-subjective-landscape" class="preview-gallery"></div>
-<div id="gallery-geometry" class="preview-gallery"></div>
-<div id="gallery-orthochromasia" class="preview-gallery"></div>
-<div id="gallery-genius-loci" class="preview-gallery"></div>
-<div id="gallery-suburbs" class="preview-gallery"></div>
-<div id="gallery-landscape" class="preview-gallery"></div>
-<div id="gallery-still1" class="preview-gallery"></div>
-<div id="gallery-still2" class="preview-gallery"></div>
-<div id="gallery-greenhouse" class="preview-gallery"></div>
-<div id="gallery-my-film-is-not-advancing" class="preview-gallery"></div>
-<div id="gallery-head" class="preview-gallery"></div>
