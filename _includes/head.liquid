@@ -196,7 +196,7 @@
           "{{ g.id }}",
           "{{ g.url }}",
           [ {% for url in g.images %}"{{ url }}",{% endfor %} ],
-          "{{ g.title }},
+          "{{ g.title }}",
           {% if g.width %}"{{g.width}}",{% else %}null,{% endif %}
           {% if g.height %}"{{g.height}}",{% else %}null,{% endif %}
           );

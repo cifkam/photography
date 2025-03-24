@@ -22,7 +22,7 @@ function setupPreviewGalleryGalleryV2(id, href, images, title, width = null, hei
   prev.classList.add("preview-gallery-prev");
   prev.innerHTML = "↩";
   prev.onclick = (function (g) {
-    return function() {
+    return function () {
       g.index = Math.max(0, g.index - 1);
       g.image.style.backgroundImage = "url('" + g.images[g.index] + "')";
     };
