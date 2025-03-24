@@ -190,13 +190,13 @@ li.nav-subitem {
   display: block;
   width: 480px;
   height: auto;
-  max-width: calc(100vw - 50px);
+  max-width: 100%;
 }
 
 .preview-gallery .preview-gallery-prev,
 .preview-gallery .preview-gallery-next{
     display: block;
-    background-color: rgba(100%, 100%, 100%, 0.6);
+    background-color: white;
     bottom: 33px;
     position: absolute;
     padding: 5px 12px;
@@ -206,6 +206,7 @@ li.nav-subitem {
     user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+    opacity: 0.7;
 }
 
 .preview-gallery .preview-gallery-prev {
@@ -219,7 +220,7 @@ li.nav-subitem {
 .preview-gallery .preview-gallery-next:hover,
 .preview-gallery .preview-gallery-prev:hover {
     color: white;
-    background-color: rgba(0, 0, 0, 0.6)
+    background-color: black;
 }
 
 .preview-gallery .preview-gallery-item.visible {
