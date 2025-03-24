@@ -2,15 +2,15 @@ function setupPreviewGalleryGallery(id, href, images, title, width = null, heigh
   let g = document.getElementById(id);
   g.classList.add("preview-gallery");
 
-  let image_link = g.querySelector(".preview-gallery-image");
+  let image_link = g.querySelector(".preview-gallery-image-link");
   if (image_link == null) {
     image_link = document.createElement("a");
-    image_link.classList.add("preview-gallery-image");
+    image_link.classList.add("preview-gallery-image-link");
     image_link.href = href;
     g.appendChild(image_link);
   }
 
-  let image = image_link.querySelector("img");
+  let image = image_link.querySelector(".preview-gallery-image");
   if (image == null) {
     image = document.createElement("img");
     image.src = images[0];

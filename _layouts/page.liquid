@@ -20,12 +20,12 @@ layout: default
       {% for g in page.preview_galleries %}
         {% if g.generate and g.generate == false %}
         {% else %}
-          <div id="{{g.id}}" class="preview-gallery">
-            <a href="{{g.url}}">
-              <img src="g.images[0]" class="preview-gallery-image">
+          <div id="{{ g.id }}" class="preview-gallery">
+            <a href="{{ g.url }}" class="preview-gallery-image-link">
+              <img src="{{ g.images[0] }}" class="preview-gallery-image">
             </a>
             <div class="preview-gallery-title">
-              <a href="{{g.url}}">{{g.title}}</a>
+              <a href="{{ g.url }}">{{ g.title }}</a>
             </div>
           </div>
         {% endif %}

@@ -38,7 +38,7 @@ preview_galleries:
       - /photography/assets/img/ortochromasia/ortho_03-480.webp
       - /photography/assets/img/ortochromasia/ortho_04-480.webp
       - /photography/assets/img/ortochromasia/ortho_05-480.webp
-    
+
   - id: gallery-genius-loci
     title: genius loci
     url: /photography/genius-loci
