@@ -60,7 +60,7 @@ function setupPreviewGalleryGallery(id, href, images, title, width = null, heigh
   g.appendChild(next);
 
   // Create div with gallery title
-  let title_div = g.querySelector("preview-gallery-title");
+  let title_div = g.querySelector(".preview-gallery-title");
   if (title_div == null) {
     title_div = document.createElement("div");
     title_div.classList.add("preview-gallery-title");
