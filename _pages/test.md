@@ -28,6 +28,8 @@ preview_galleries:
       - /photography/assets/img/geometry/geometry_4-480.webp
   - id: gallery-suburbs
     title: Suburbs
+    width: 300px
+    height: 300px
     url: /photography/suburbs
     images:
       - /photography/assets/img/suburbs/suburbs_1-480.webp
