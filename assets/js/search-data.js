@@ -100,13 +100,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/photography/my-film-is-not-advancing";
           },
-        },{id: "nav-test",
-          title: "test",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/photography/test";
-          },
         },{id: "post-spotlight-gallery",
       
         title: "spotlight gallery",
